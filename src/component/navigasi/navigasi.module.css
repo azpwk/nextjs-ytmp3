@@ -1,0 +1,111 @@
+/* Header utama */
+.kepala {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: var(--nav-bg, #f5f5f5);
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.kepala a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+/* Logo + Nama */
+.logo-name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-name h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Link desktop */
+.link {
+  display: flex;
+  gap: 20px;
+}
+
+.link a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.link a:hover {
+  color: #0070f3;
+}
+
+/* Hamburger button (hanya tampil di mobile) */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Menu mobile */
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: var(--menu-bg, #fff);
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.mobileMenu a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+/* Dark Mode Toggle */
+.toggle {
+  position: fixed;
+  right: 0.5;
+  bottom: 0;
+  margin-left: 20px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Efek Logo Berputar */
+.rotate {
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .link {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

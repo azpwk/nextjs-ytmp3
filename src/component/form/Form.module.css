@@ -1,0 +1,50 @@
+/* Atur container utama untuk menempatkan form di tengah halaman */
+.containerform {
+  background-color: rgba(240, 248, 255, 0.425);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* text-align: center; */
+  width: 90%;
+  max-width: 500px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.form {
+  display: flex;
+  /* padding: 10px; */
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Gaya untuk input text */
+.form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+}
+
+/* Gaya untuk tombol */
+.form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efek saat tombol di-hover */
+.form button:hover {
+  background-color: #0056b3;
+}
+
+.thumbnail {
+  max-width: 200px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
