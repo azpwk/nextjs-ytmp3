@@ -16,7 +16,7 @@ export async function fastubeMP3(url) {
           categories: info.categories,
           url: audioFormat.url,
         };
-        // console.log(audio);
+        console.log(audio);
         return audio;
       }
     }

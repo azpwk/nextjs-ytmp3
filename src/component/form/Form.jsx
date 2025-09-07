@@ -23,7 +23,7 @@ export default function Form() {
       });
 
       const data = await response.json();
-
+      console.log(data);
       if (response.ok) {
         // Jika berhasil, simpan data video ke state
         setVideoData(data.data);
